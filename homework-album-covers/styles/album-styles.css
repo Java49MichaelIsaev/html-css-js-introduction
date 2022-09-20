@@ -1,32 +1,77 @@
-
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(115, 140, 239);
+}
 .logo  {
-font-size: 3em; display: block; text-align: center;
-}
-.main-class {
-     display: block; text-align: center; font-size: 1em; 
-}
-.details-container {
+    font-size: 2em;
     display: block; 
+    text-align: center;
+    background-color: rgb(37, 77, 222);
+}
+
+.main-class {
+     display: block; 
+     text-align: center; 
+     font-size: 1em; 
+}
+
+.details-container {
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-top: 2.5vh ; 
+
 }
 .details-image {
-    width: 20em; display: inline-block;
+    width: 50vw;
+    height: 40vw;
+    border-radius: 25%;
 }
+
 .details-title {
-display: block; text-align: center; font-size: 2em;
+    display: block;
+    
 }
+
 .thumbnails-list {
-list-style: none; margin: 15px;
+    list-style: none;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-height: 25vh;
+    overflow-y: auto; 
+    justify-content: space-around;
+    padding-left: 0;
+    
 }
+
 .thumbnails-item {
-    display: inline-block;
+    width: 20vw;
+    height: 20vw; 
+    margin-top: 2.5vh;
+    border: solid 1px black;
+    border-radius: 25%;
+    overflow: hidden;
+    
 }
 .thumbnails-image {
-    width: 10em; display: inline-block; margin: 15px
+    display: block;
+    width: 20vw;
+    height: 15vw;
+    
 }
 .thumbnails-title {
-     display: block;
+    display: block;
+    text-align: center; 
+    height: 5vw;
+    background-color: rgb(205, 13, 235);
+    font-size: 70%;
+    
+    
 }
 .thumbnails-anchor {
+    text-decoration: none;
    
 }
 

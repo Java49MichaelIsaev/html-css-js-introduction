@@ -1,13 +1,14 @@
 body {
     display: flex;
     flex-direction: column;
-    background-color: rgb(115, 140, 239);
+    background-color: rgb(255, 242, 2);
 }
 .logo  {
     font-size: 2em;
     display: block; 
     text-align: center;
-    background-color: rgb(37, 77, 222);
+    background-color: rgb(238, 179, 15);
+    border-radius: 50%;
 }
 
 .main-class {
@@ -65,7 +66,7 @@ margin-top: 2.5vh ;
     display: block;
     text-align: center; 
     height: 5vw;
-    background-color: rgb(205, 13, 235);
+    background-color: rgb(255, 240, 103);
     font-size: 70%;
     
     

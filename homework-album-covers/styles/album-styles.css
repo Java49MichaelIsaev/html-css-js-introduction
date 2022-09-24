@@ -121,6 +121,7 @@ body {
 
     .details-container {
         margin-top: 5%;
+        justify-content: center;
 
     }
 
@@ -132,7 +133,6 @@ body {
     font-size: 2vh;
     text-align: center;
 }
-
 
 .main-class {
     flex-direction: row;
@@ -152,8 +152,6 @@ body {
     justify-content: space-around;
     padding-right: 3vh;
 }
-
-
 
 .logo {
     padding-top: 1vh;
@@ -184,11 +182,8 @@ body {
     justify-content: space-around;
 
 }
-
 .thumbnails-title {
-
     font-size: large;
-
 }
 
 .details-container {
@@ -197,6 +192,7 @@ body {
     padding-right: 10vh;
     padding-top: 4vh;
     text-align: center;
+    
 }
 
 .details-image {

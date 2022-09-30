@@ -1,0 +1,33 @@
+body,
+html {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.board {
+    align-items: center;
+    border: solid 0.5px;
+    margin: 0px;
+    max-width: 20vw;
+}
+
+.board-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 41vw;
+}
+
+.cell-black {
+    width: 2.5vw;
+    height: 2.5vw;
+    background-color: black;
+}
+
+.cell-white {
+    width: 2.5vw;
+    height: 2.5vw;
+    background-color: white;
+}

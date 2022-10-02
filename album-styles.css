@@ -1,3 +1,9 @@
+:root{
+    --cell-width: 2.5vw;
+    --cell-height: 2.5vw;
+
+}
+
 body,
 html {
     display: flex;
@@ -7,28 +13,26 @@ html {
 }
 
 .board {
-    display: block;
-    align-items: center;
+    
     border: solid 0.5px;
-    margin: 0px;
-    max-width: 20vw;
+    max-width: calc(var(--cell-width)*8);
 }
 
 .board-row {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    max-width: 41vw;
+   
 }
 
 .cell-black {
-    width: 2.5vw;
-    height: 2.5vw;
+    width:  var(--cell-width);
+    height: var(var(--cell-height));
     background-color: black;
 }
 
 .cell-white {
-    width: 2.5vw;
-    height: 2.5vw;
+    width:  var(--cell-width);
+    height: var(--cell-height);
     background-color: white;
 }

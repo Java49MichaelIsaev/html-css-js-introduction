@@ -46,9 +46,9 @@ body {
     flex-direction: column;
     align-items: center;
     margin-bottom: 10vh;
-    position: relative;
-
+    
 }
+
 
 .details-image {
     width: 80vw;
@@ -62,14 +62,21 @@ body {
     margin-left: 1vw;
   }
 
+
+.details-frame { 
+    position: relative;
+}
+
 .details-title {
     display: block;
     color: coral;
-    font-size: 7vw;
+    font-size: 4vw;
     font-style: italic;
-    position: absolute;
     bottom: 1vw;
-
+    position: absolute;
+    left: 3vw;
+    bottom: 2vw;
+    background-color: antiquewhite;
     
     
 }
@@ -158,7 +165,7 @@ body {
     .details-title {
         display: block;
         color: coral;
-        font-size: 3vw;
+        font-size: 2vw;
         bottom: 4vw;
     }
 
@@ -215,6 +222,8 @@ body {
             margin-top: -10%;
             border-radius: 15%;
         }
-   
+         .details-title{
+         font-size: 2vw;
+   }
     }
 }

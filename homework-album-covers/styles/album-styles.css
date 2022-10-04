@@ -70,7 +70,7 @@ body {
 .details-title {
     display: block;
     color: coral;
-    font-size: 4vw;
+    font-size: 1em;
     font-style: italic;
     bottom: 1vw;
     position: absolute;
@@ -165,7 +165,7 @@ body {
     .details-title {
         display: block;
         color: coral;
-        font-size: 2vw;
+        font-size: 1em;
         bottom: 4vw;
     }
 
@@ -223,7 +223,7 @@ body {
             border-radius: 15%;
         }
          .details-title{
-         font-size: 2vw;
+         font-size: 1.5em;
    }
     }
 }

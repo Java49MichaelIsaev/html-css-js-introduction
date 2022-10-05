@@ -15,7 +15,7 @@ html {
 .board {
     
     border: solid 0.5px;
-    max-width: calc(var(--cell-width)*8);
+   
 }
 
 .board-row {

@@ -50,7 +50,6 @@ body {
 
 }
 
-
 .details-image {
     width: 80vw;
     height: 70vw;
@@ -79,8 +78,6 @@ body {
     left: 3vw;
     bottom: 2vw;
     background-color: rgb(245, 166, 106);
-
-
     -moz-border-radius: 3vw;
     border-radius: 3vw;
 
@@ -134,7 +131,12 @@ body {
     transform: scale(1.1);
     margin-left: 1vw;
 }
-
+.external-cite{
+    color: red;
+}
+.external-cite:hover {
+    transform: scale(1.2);
+}
 
 
 @media (min-width: 560px) {
@@ -167,20 +169,23 @@ body {
         justify-content: space-around;
     }
 
+
     .details-image {
-        width: 35vw;
-        height: 35vw;
+        width: 30vw;
+        height: 30vw;
 
     }
-
+    
+    
+    }
     .details-container {
-        margin-top: 5%;
+        margin-bottom: 15%;
         justify-content: center;
+        margin-bottom: 2vw;
     }
 
     .details-title {
         display: block;
-
         font-size: 1em;
         bottom: 4vw;
     }
@@ -232,8 +237,8 @@ body {
         }
 
         .details-image {
-            width: 37vw;
-            height: 37vw;
+            width: 33vw;
+            height: 33vw;
             border-radius: 25%;
             margin-top: -20%;
             border-radius: 15%;
@@ -242,5 +247,6 @@ body {
         .details-title {
             font-size: 1.5em;
         }
+        
     }
-}
+    

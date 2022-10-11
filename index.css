@@ -1,5 +1,12 @@
+body,
+html {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
 .button{
-color: red;
-border: none;
-width: 200px;
+color: red; 
+width: 24vw;
+height: 5vw;
 }

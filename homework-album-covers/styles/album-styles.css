@@ -26,7 +26,7 @@ body {
 
 .logo {
     font-size: 2em;
-    background-color: rgb(238, 179, 15);
+    background-color: rgb(253, 199, 52);
     display: block;
     text-align: center;
     font-family: lakeshore;
@@ -59,7 +59,7 @@ body {
     width: 80vw;
     height: 70vw;
     border-radius: 25%;
-    border: solid 3px rgb(229, 143, 143);
+    border: solid 3px rgb(255, 0, 0);
 
 }
 
@@ -108,8 +108,8 @@ body {
     max-width: var(--thumbnails-img-width);
     min-height: calc(var(--thumbnails-img-height) + var(--thumbnails-title-height));
     margin-top: 2.5vh;
-    border: solid 2px rgb(244, 127, 127);
-    border-radius: 15%;
+    border: solid 2px rgba(255, 0, 0, 0.91);
+    border-radius: 25%;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -231,7 +231,6 @@ body {
     .main-class {
         flex-direction: row;
       
-
     }
 
     .thumbnails-list {
@@ -267,14 +266,14 @@ body {
         height: calc(var(--thumbnails-title-height) *0.5);
 
     }
-
+.details-container{
+   
    
 
     .details-image {
         width: 33vw;
         height: 33vw;
         border-radius: 25%;
-        
         border-radius: 15%;
     }
 

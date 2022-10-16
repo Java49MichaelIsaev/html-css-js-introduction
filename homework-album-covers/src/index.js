@@ -2,6 +2,7 @@
  const anchors = document.querySelectorAll(".thumbnails-anchor");
  const detailsImage = document.querySelector(".details-image");
  const detailsTitle = document.querySelector(".details-title");
+ 
  printSomething();
 
  function setDetails(anchor) {
@@ -13,8 +14,10 @@
     anchors[i].addEventListener("click", function(){
         console.log("event - click on ", anchors[i]); 
         setDetails(anchors[i]);
+   
     })
  }
+
 
  function printSomething(){
          console.log("anchor's amount is ", anchors.length);

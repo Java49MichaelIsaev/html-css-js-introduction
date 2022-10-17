@@ -32,27 +32,25 @@ body {
     font-family: lakeshore;
     text-transform: uppercase;
     font-size: 9vw;
-    color: rgb(240, 79, 74);
-    
+    color: rgb(255, 8, 0);
+
 }
 
 .main-class {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     flex-grow: 1;
-    
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
 }
 
 .details-container {
-    display:flex;
+    display: flex;
     flex-direction: column;
-    align-items:center;
-    
-    margin-top: 50vh;
-    padding-top: -40vh;
-   
-    
+    align-items: center;
+
 }
 
 .details-image {
@@ -70,7 +68,6 @@ body {
 
 .details-frame {
     position: relative;
-    padding-bottom: -140vw;
     margin-bottom: 5vh;
 }
 
@@ -84,23 +81,20 @@ body {
     left: 3vw;
     bottom: 2vw;
     background-color: rgb(221, 171, 132);
-    -moz-border-radius: 3vw;
     border-radius: 3vw;
 
 }
 
 .thumbnails-list {
-    list-style: none;
+
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    max-height: 25vh;
+    max-height: 30vh;
     overflow-y: auto;
     justify-content: space-around;
     padding-right: 4vw;
     margin-left: -5vw;
-    margin-bottom: 30vw;
-    margin-top: 5vh;
 
 }
 
@@ -119,10 +113,7 @@ body {
 .thumbnails-image {
     width: var(--thumbnails-img-width);
     height: var(--thumbnails-img-height);
-    display:block;
-    
-    
-
+    display: block;
 }
 
 .thumbnails-title {
@@ -145,12 +136,13 @@ body {
 }
 
 .external-cite {
-    color: black;
+    color: rgb(30, 79, 91);
     background-color: rgb(219, 179, 130);
     font-style: italic;
     border-radius: 25%;
-    margin-top: 5vh;
-   
+    margin-top: vh;
+    font-size: medium;
+
 }
 
 .external-cite:hover {
@@ -166,11 +158,10 @@ body {
     color: rgb(0, 0, 0);
     text-align: center;
     margin: 0%;
-    font:  sans-serif;
+    font: sans-serif;
 }
 
 @media (min-width: 560px) {
-
 
     .logo {
         font-size: 4vw;
@@ -179,10 +170,12 @@ body {
     .thumbnails-list {
         flex-direction: column;
         flex-wrap: nowrap;
-        max-height: 80vh;
+        max-height: 120vh;
         max-width: 40vh;
         order: -1;
         justify-content: flex-start;
+        margin-top: 0;
+        margin-bottom: 13vh;
     }
 
     .thumbnails-title {
@@ -200,53 +193,58 @@ body {
     }
 
     .details-image {
-        width: 30vw;
-        height: 30vw;
+        width: 35vw;
+        height: 35vw;
 
     }
-}
 
     .details-container {
-    margin-top: 5vh;
-    
-    margin-bottom: 2vw;
-}
-
+        margin-top: 10vh;
+    }
 
     .details-title {
-    display: block;
-    font-size: 1em;
-    bottom: 4vw;
-}
-.external-cite{
-    margin-top: 0vh;
-    font-size: smaller;
-}
-.footer{
-    font: 0.5em sans-serif;
+        display: block;
+        font-size: 1em;
+        bottom: 4vw;
+    }
+
+    .external-cite {
+        margin-top: 0vh;
+        font-size: smaller;
+    }
+
+    .footer {
+        font: 0.5em sans-serif;
+    }
 }
 
 @media (min-width: 900px) {
 
-    .main-class {
-        flex-direction: row;
-      
+
+    .details-container {
+        justify-content: center;
+        margin-bottom: 15vh;
+
     }
 
     .thumbnails-list {
 
         flex-direction: row;
         flex-wrap: wrap;
-        
         max-width: 15vw;
+        max-height: 450vh;
         padding-right: 3vh;
-        margin: 0;
-        margin-bottom: 0;
-    
+        margin-bottom: 10vh;
+        justify-content: flex-start;
+        margin-top: -10px;
+
     }
 
     .logo {
         padding-top: 1vh;
+        block-size: 5vw;
+        font-size: 6vh;
+
     }
 
     .thumbnails-item {
@@ -255,20 +253,17 @@ body {
     }
 
     .thumbnails-image {
-        width: calc(var(--thumbnails-img-width)*1.1);
-        height: calc(var(--thumbnails-img-height) * 0.7);
+        width: calc(var(--thumbnails-img-width)*0.5);
+        height: calc(var(--thumbnails-img-height) * 0.5);
 
     }
 
     .thumbnails-title {
 
-        font-size: 1vw;
+        font-size: 1.4vw;
         height: calc(var(--thumbnails-title-height) *0.5);
 
     }
-.details-container{
-   
-   
 
     .details-image {
         width: 33vw;
@@ -281,8 +276,17 @@ body {
         font-size: 1.5em;
     }
 
-}
+    .footer {
+        font-size: small;
+        size: 10vh;
+    }
 
-.footer {
-    font-size: small;
+    .external-cite {
+        font-size: medium;
+    }
+
+    .thumbnails-item {
+        padding-top: 0;
+        margin-top: 1.9vh;
+    }
 }

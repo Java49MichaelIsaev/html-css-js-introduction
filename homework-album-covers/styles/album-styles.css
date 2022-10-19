@@ -20,7 +20,6 @@ html {
 body {
     display: flex;
     flex-direction: column;
-    background-color: rgb(255, 242, 2);
     margin: 0;
 }
 
@@ -33,7 +32,14 @@ body {
     text-transform: uppercase;
     font-size: 9vw;
     color: rgb(255, 8, 0);
+    background-image: url("/Users/michaelisaev/Documents/Course/html-css-js-introduction-/homework-album-covers/images/backlogo.jpeg");
 
+}
+
+.logo-image {
+    width: 12vh;
+    height: 12vh;
+    padding-top: 2vh;
 }
 
 .main-class {
@@ -50,14 +56,15 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 3vh;
 
 }
 
 .details-image {
-    width: 80vw;
-    height: 70vw;
+    width: 65vw;
+    height: 65vw;
     border-radius: 25%;
-    border: solid 3px rgb(229, 143, 143);
+    border: solid 3px rgb(0, 0, 0);
 
 }
 
@@ -75,7 +82,7 @@ body {
     display: block;
     font-size: 1em;
     font-style: italic;
-    color: red;
+    color: rgb(0, 0, 0);
     bottom: 1vw;
     position: absolute;
     left: 3vw;
@@ -90,11 +97,12 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    max-height: 30vh;
+    max-height: 31vh;
     overflow-y: auto;
     justify-content: space-around;
     padding-right: 4vw;
     margin-left: -5vw;
+
 
 }
 
@@ -102,11 +110,12 @@ body {
     max-width: var(--thumbnails-img-width);
     min-height: calc(var(--thumbnails-img-height) + var(--thumbnails-title-height));
     margin-top: 2.5vh;
-    border: solid 2px rgb(244, 127, 127);
+    border: solid 2px rgb(0, 0, 0);
     border-radius: 15%;
     overflow: hidden;
     display: flex;
     justify-content: center;
+
 
 }
 
@@ -114,6 +123,7 @@ body {
     width: var(--thumbnails-img-width);
     height: var(--thumbnails-img-height);
     display: block;
+
 }
 
 .thumbnails-title {
@@ -121,9 +131,10 @@ body {
     text-align: center;
     height: var(--thumbnails-title-height);
     background-color: rgb(244, 197, 111);
-    color: rgb(248, 2, 2);
-    font-size: 0.5em;
+    color: rgb(0, 0, 0);
+    font-size: 0.7em;
     justify-content: space-around;
+
 }
 
 .thumbnails-anchor {
@@ -161,6 +172,18 @@ body {
     font: sans-serif;
 }
 
+.external-cite:link {
+    color: rgb(135, 22, 167);
+}
+
+.external-cite:visited {
+    color: rgb(0, 0, 0)
+}
+
+.external-cite:hover {
+    color: yellow;
+}
+
 @media (min-width: 560px) {
 
     .logo {
@@ -178,13 +201,12 @@ body {
         margin-bottom: 13vh;
     }
 
-    .thumbnails-title {
-        font-size: 1em;
+    .thumbnails-item {
+        border-radius: 25%;
     }
 
-    .thumbnails-item {
-        max-width: calc(var(--thumbnails-img-width) *1.4);
-
+    .thumbnails-title {
+        font-size: 1em;
     }
 
     .main-class {
@@ -199,7 +221,7 @@ body {
     }
 
     .details-container {
-        margin-top: 10vh;
+        margin-top: 4vh;
     }
 
     .details-title {
@@ -222,7 +244,6 @@ body {
 
     .main-class {
         flex-direction: row;
-      
 
     }
 
@@ -235,7 +256,8 @@ body {
         padding-right: 3vh;
         margin-bottom: 10vh;
         justify-content: flex-start;
-        margin-top: -10px;
+        margin-top: -3px;
+
 
     }
 
@@ -253,7 +275,7 @@ body {
 
     .thumbnails-image {
         width: calc(var(--thumbnails-img-width)*0.5);
-        height: calc(var(--thumbnails-img-height) * 0.5);
+        height: calc(var(--thumbnails-img-height) * 0.6);
 
     }
 
@@ -261,17 +283,13 @@ body {
 
         font-size: 1.4vw;
         height: calc(var(--thumbnails-title-height) *0.5);
-
     }
-
-   
 
     .details-image {
         width: 33vw;
         height: 33vw;
         border-radius: 25%;
-        
-        border-radius: 15%;
+
     }
 
     .details-title {
@@ -285,10 +303,20 @@ body {
 
     .external-cite {
         font-size: medium;
+
     }
 
     .thumbnails-item {
         padding-top: 0;
         margin-top: 1.9vh;
     }
+
+    .details-container {
+        display: inline-flex;
+        justify-content: center;
+        margin-bottom: 15vh;
+
+    }
+
+
 }

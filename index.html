@@ -10,9 +10,9 @@
     <link rel="icon" href="homework-album-covers/images/logo.png" type="logo.png">
 </head>
 
-<body bgcolor="#c3deeb" ; style="font-family: Comic Sans MS">
+<body style="font-family: Comic Sans MS">
 
-
+ 
     <header class="logo">
         <div style="font-family: Comic Sans MS;">
             <img src="homework-album-covers/images/logo2.webp" class="logo-image">
@@ -20,9 +20,10 @@
     </header>
 
 
-    <main class="main-class">
+    <main class="main-class hidden">
         <section class="details-container">
             <div class="details-frame">
+                <button class="hide-button" onclick="hideDetails()"><hide-details></button>
                 <a href="#" class="details-anc" details-url="https://en.wikipedia.org/wiki/Gustav_Klimt">
                 <img src="homework-album-covers/images/Album0.jpeg" class="details-image">
                 <span class="details-title">Gustav Klimt (1862 – 1918)</span>
@@ -36,9 +37,9 @@
 
             <li class="thumbnails-item">
                 <a href="#" class="thumbnails-anchor" data-details-image="homework-album-covers/images/Album1.jpeg"
-                    data-details-title="Pallas Athene (1898)" data-details-url="https://www.gustav-klimt.com/Pallas-Athene.jsp">
+                    data-details-title="Lady with Fan (1898)" data-details-url="https://www.gustav-klimt.com/Pallas-Athene.jsp">
                     <img src="homework-album-covers/images/Album1.jpeg" class="thumbnails-image">
-                    <span class="thumbnails-title">Pallas Athene</span>
+                    <span class="thumbnails-title">Lady with Fan</span>
                 </a>
             </li>
 
@@ -120,7 +121,7 @@
 
 
         <div class="footer">
-            <small>All rights are not reserved, sorry! 2022(₵)</small>
+            <a>All rights are not reserved, sorry! 2022(₵)<a>
         </div>
 
     </main>

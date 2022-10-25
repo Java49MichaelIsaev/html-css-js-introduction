@@ -24,6 +24,8 @@ body {
     margin: 0;
 }
 
+.thumbnails-music {}
+
 .logo {
 
     display: block;
@@ -90,7 +92,8 @@ body {
 .hide-button {
     position: absolute;
     top: 4vh;
-    right: 4vw;
+    right: 5vw;
+
 }
 
 .details-title {
@@ -124,7 +127,7 @@ body {
 }
 
 .hidden .thumbnails-list {
-   
+
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -267,7 +270,7 @@ body {
     }
 
     .thumbnails-title {
-        font-size: 0.7em;
+        font-size: 0.9em;
     }
 
     .hidden .thumbnails-title {
@@ -383,7 +386,7 @@ body {
 
     .thumbnails-title {
 
-        font-size: 1.4vw;
+        font-size: 1.2vw;
         height: calc(var(--thumbnails-title-height) *0.5);
     }
 

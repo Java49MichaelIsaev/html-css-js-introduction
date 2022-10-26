@@ -14,29 +14,39 @@ function setDetails(anchor) {
    detailsImage.setAttribute('src', anchor.getAttribute('data-details-image'));
    detailsTitle.innerHTML = anchor.getAttribute('data-details-title');
    detailsAnchor.setAttribute("details-url", anchor.getAttribute('data-details-url'));
+   pauseAudio(1);
    detailsMusic.setAttribute('src', anchor.getAttribute('data-details-music'));
 }
-
-function startMusic(anchor) {
-   detailsMusic.play('src', anchor.getAttribute('data-details-music'));
-   setTimeout(function () {
-      detailsMusic.pause('src', anchor.getAttribute('data-details-music'));
-   }, 5000)
-}
-
 
 function showDetails() {
    mainClass.classList.remove(HIDDEN);
    detailsContainer.classList.add(IS_POINT);
-   setTimeout(function () {
+   setTimeout(function() {
       detailsContainer.classList.remove(IS_POINT);
-   }, 1)
+   }, 1);
+
+   playAudio();
+   pauseAudio(10000);
 }
 
 function hideDetails() {
    mainClass.classList.add(HIDDEN);
+   pauseAudio(1);
+
 }
 
+function playAudio() {
+   setTimeout(function () {
+      detailsMusic.play();
+   },1);
+}
+
+function pauseAudio(msecs) {
+   setTimeout(function() {
+      detailsMusic.pause();
+   }, msecs); 
+}
+ 
 detailsFrame.addEventListener("click", function () {
    window.open(detailsAnchor.getAttribute('details-url'))
 })
@@ -44,26 +54,18 @@ detailsFrame.addEventListener("click", function () {
 for (let i = 0; i < anchors.length; i++) {
    anchors[i].addEventListener("click", function () {
       console.log("event - click on ", anchors[i]);
-      showDetails();
       setDetails(anchors[i]);
-      startMusic(anchors[i]);
-      // stopMusic(anchors[i]);
-
+      showDetails();
+   
    })
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
+// function startMusic(anchor) {
+//    detailsMusic.play('src', anchor.getAttribute('data-details-music'));
+//    setTimeout(function() {
+//       detailsMusic.pause();
+//    },5000)
+// }
 
 
 

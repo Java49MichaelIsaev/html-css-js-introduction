@@ -1,10 +1,10 @@
 console.log("Launching script");
+const mainClass = document.querySelector(".main-class");
 const anchors = document.querySelectorAll(".thumbnails-anchor");
 const detailsImage = document.querySelector(".details-image");
 const detailsTitle = document.querySelector(".details-title");
 const detailsAnchor = document.querySelector(".details-anc");
 const detailsFrame = document.querySelector(".details-frame");
-const mainClass = document.querySelector(".main-class");
 const detailsContainer = document.querySelector(".details-container");
 const detailsMusic = document.querySelector(".thumbnails-music");
 const HIDDEN = "hidden";

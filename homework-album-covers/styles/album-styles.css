@@ -91,8 +91,11 @@ body {
 
 .hide-button {
     position: absolute;
-    top: 4vh;
+    top: 10vh;
     right: 5vw;
+    background-color: #f7d387;
+    border-radius: 5%;
+    ;
 
 }
 
@@ -305,7 +308,7 @@ body {
     }
 
     .footer {
-        font: 0.5em sans-serif;
+        font: 0.3em sans-serif;
     }
 
     .thumbnails-item {
@@ -355,22 +358,23 @@ body {
         max-width: 15vw;
         max-height: 450vh;
         padding-right: 3vh;
-        margin-bottom: vh;
-        justify-content: flex-start;
+        padding-left: 0;
+        justify-content:space-around;
         margin-top: -1px;
+        
     }
 
     .hidden .thumbnails-list {
-        margin-top: -0.09vh;
-        margin-right: -13vh;
+        margin-top: -0.1vh;
+        margin-right: 10vh;
+        
 
     }
 
     .hidden .thumbnails-item {
-        width: calc(var((--thumbnails-img-width)-50vw));
-        height: calc(var((--thumbnails-img-height)-50vh));
+       
         margin-top: 2.5vh;
-        border: solid 2px rgb(0, 0, 0);
+        border: solid 1px rgb(0, 0, 0);
         border-radius: 25%;
         overflow: hidden;
         display: flex;

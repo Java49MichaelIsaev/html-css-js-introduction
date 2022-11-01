@@ -24,16 +24,16 @@
 // // let strNum16 = num10.toString(16);
 // // console.log(strNum10, strNum16);
 
-// function fromMorseToNumber(morseCode) {
-//     let result = 0;
-//     for (let i = 0; i < morseCode.length; i++) {
-//         let code = morseCode[i] == '.' ? 0 : 1;
-//         result = result *  2 + code;
-//     }
-//     return result;
-// }
+function fromMorseToNumber(morseCode) {
+    let result = 0;
+    for (let i = 0; i < morseCode.length; i++) {
+        let code = morseCode[i] == '.' ? 0 : 1;
+        result = result *  2 + code;
+    }
+    return result;
+}
 
-// console.log(fromMorseToNumber('-.-..-...--..'));
+console.log(fromMorseToNumber('-.-..-...--..'));
 
 
 
@@ -60,8 +60,8 @@ function fromNumberToString(number,base) {
     number = Math.abs(number); 
     let res = "";
     do {
-        let digit = number % base;
-        digit = digit + 55;
+        let digit = number * base;
+
         let sym = (String.fromCharCode(digit));
         res = sym + res;
         number = Math.trunc(number / base); 
@@ -73,28 +73,29 @@ function fromNumberToString(number,base) {
 
 console.log(fromNumberToString(900550,36))
 console.log(fromNumberToString(46016237,36))
+console.log(fromNumberToString(11483,2))
 
 
+// 97 -> 10
+// 48 -> 0
 
 
+// function fromStringToNumber(string, base) {
 
-function fromStringToNumber(string, base) {
-
-    let result = 0;
-    for (let i = 0; i < string.length; i++) {
-        let code = string[i].charCodeAt(0) 
-        result = result * base + code;
+//     let result = 0;
+//     for (let i = 0; i < string.length; i++) {
+//         let code = string[i].charCodeAt(0) 
+//         result = result * base + code;
         
-    }
-    return result;
-}
+//     }
+//     return result;
 
 console.log(fromStringToNumber('java',36));
 
 
 
 //getting code from symbol
-console.log('v'.charCodeAt(0)) //ASCII
+// console.log('v'.charCodeAt(0)) //ASCII
 
 // //getting symbol from code 
 // console.log(String.fromCharCode(65))

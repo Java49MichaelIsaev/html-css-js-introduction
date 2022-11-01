@@ -1,0 +1,20 @@
+{
+  "name": "html-css-js-introduction-",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app_01.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Java49MichaelIsaev/html-css-js-introduction-.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Java49MichaelIsaev/html-css-js-introduction-/issues"
+  },
+  "homepage": "https://github.com/Java49MichaelIsaev/html-css-js-introduction-#readme"
+}

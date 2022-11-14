@@ -1,0 +1,17 @@
+body {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(247, 191, 247);
+}
+.word-guess {
+    display: flex;
+    flex-direction: row;
+}
+.letter-guess {
+    font-size: 1.5em;
+    margin-left: 2vw;
+    
+}
+
+

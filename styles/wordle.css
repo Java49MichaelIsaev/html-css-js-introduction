@@ -1,17 +1,28 @@
 body {
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     background-color: rgb(247, 191, 247);
 }
+
 .word-guess {
     display: flex;
     flex-direction: row;
 }
+
 .letter-guess {
     font-size: 1.5em;
     margin-left: 2vw;
-    
+
 }
 
+.game-over {
+    font-size: larger;
+    display: none;
+    color: red;
+}
 
+.game-win {
+    display: none;
+    color: green;
+}

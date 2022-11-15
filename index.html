@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles/wordle.css">
 </head>
+
 <body>
     <input type="text" onchange="onChange(event)">
     <section class="word-guess">
@@ -15,13 +17,17 @@
         <div class="letter-guess"></div>
         <div class="letter-guess"></div>
         <div class="letter-guess"></div>
+    </section>
 
-        <div class="game-over" >
-            <label>Game over, sorry!</label>
-           
-        </div>
-        
+    <label id="game-over" class="game-over">
+        Sorry - your guess trials have ended up!
+    </label>
+
+    <label id="game-win" class="game-win">
+        Congratulations - you have guessed word!
+    </label>
 
     <script src="src/wordle.js"></script>
 </body>
+
 </html>

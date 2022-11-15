@@ -10,6 +10,7 @@
 </head>
 
 <body>
+
     <input type="text" onchange="onChange(event)">
     <section class="word-guess">
         <div class="letter-guess"></div>
@@ -19,15 +20,12 @@
         <div class="letter-guess"></div>
     </section>
 
-    <label id="game-over" class="game-over">
-        Sorry - your guess trials have ended up!
-    </label>
-
-    <label id="game-win" class="game-win">
-        Congratulations - you have guessed word!
-    </label>
-
+    <label class="counter" id="counter"> Guess the hidden word in 6 tries! </label>
+    <label id="game-over" class="game-over"></label>
+    <label id="game-win" class="game-win"></label>
+    
     <script src="src/wordle.js"></script>
+
 </body>
 
 </html>

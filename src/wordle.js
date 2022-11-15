@@ -1,21 +1,28 @@
-let count = 6;
-const word = "pappy"
+const word = "table"
 const N_LETTERS = 5;
+let count = 6;
 const letterElements = document.querySelectorAll(".letter-guess")
+const counter = document.getElementById("counter")
+const over = document.getElementById("game-over")
+const win = document.getElementById("game-win")
 
 function onChange(event) {
     const wordGuess = event.target.value;
     event.target.value = '';
-    count = count - 1;
+
     if (word !== wordGuess) {
         gameOver(count);
     }
 
     if (wordGuess.length != N_LETTERS) {
-        alert(`A word should contain ${N_LETTERS} letters`);
+        alert(`The word should contain ${N_LETTERS} letters`);
+    }
 
-    } else {
+    else {
+        count -= 1;
+        changeCounter(count);
         const wordAr = Array.from(wordGuess);
+
         wordAr.forEach((l, i) => letterElements[i].innerHTML = l)
         if (word == wordGuess) {
             youWin()
@@ -38,18 +45,25 @@ function onChange(event) {
 
 function gameOver(count) {
 
-    var x = document.getElementById("game-over");
     if (count > 1) {
-        x.style.display = "none";
+        over.innerHTML = "Sorry - your guess trials have ended up!";
+
     } else {
-        x.style.display = "block";
+        over.style.display = "block";
     }
 }
 
 function youWin() {
 
-    var x = document.getElementById("game-win");
-    x.style.display = "block";
+    win.style.display = "block";
+    win.innerHTML = (`"Congratulations - you have guessed the word!"`)
+    counter.style.display = "none"
 }
 
+function changeCounter(a) {
 
+    counter.innerHTML = (`Remaining guesses : ${a}`);
+    if (count < 1) {
+        counter.style.display = "none"
+    }
+}

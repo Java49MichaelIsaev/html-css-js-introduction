@@ -56,7 +56,7 @@ function gameOver(count) {
 function youWin() {
 
     win.style.display = "block";
-    win.innerHTML = (`"Congratulations - you have guessed the word!"`)
+    win.innerHTML = (`Congratulations - you have guessed the word!`)
     counter.style.display = "none"
 }
 

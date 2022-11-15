@@ -1,5 +1,5 @@
 let count = 6;
-const word = "table"
+const word = "pappy"
 const N_LETTERS = 5;
 const letterElements = document.querySelectorAll(".letter-guess")
 
@@ -22,7 +22,7 @@ function onChange(event) {
         }
         const colors = wordAr.map((l, i) => {
 
-            let index = word.indexOf(l); //есть ли эта буква в слове - если есть возвращает индекс этой буквы в массиве, если нет - -1
+            let index = word.indexOf(l);
             let res = 'red';
 
             if (index > -1) {

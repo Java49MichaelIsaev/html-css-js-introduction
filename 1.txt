@@ -1,0 +1,7 @@
+
+
+
+In the meantime you should write HTML page with three buttons (Show all movies;
+Show most popular movie; Show least popular movie). 
+One movie should show an image (poster_path), title and overview. 
+The data should be taken from the JSON of the classwork #20 (movies.js)

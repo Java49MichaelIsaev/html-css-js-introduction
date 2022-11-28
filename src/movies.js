@@ -13,29 +13,43 @@ ulElement.innerHTML = getPosterImages();
 
 function getPosterImages(){
     const ArImages = moviesData.results.map(movie => 
-        `<li class="movie-item"> <img class = "movie-image" src="${httpPrefix}${movie.poster_path}"></li>`);
+        `<li class="movie-item"> <img class = "movie-image" src="${httpPrefix}${movie.poster_path}"></li>` +
+        `<div class="title">${movie.original_title}</div>` + `<div class="overview">${movie.overview}</div>`);
         return ArImages.join(''); 
     }
+
+
+
+
 function show(index){
+
     sectionElements.forEach(section => section.hidden = true);
     sectionElements[index].hidden = false;
-    
+    showPopularDetails (index)
     } 
 
-  function showPopularDetails () {
+// function showPopularDetails (index) {
 
-    target.innerHTML += `<div class="text">${moviesData.results[0].original_title}</div>`
-    target.innerHTML += `<div class="text">${moviesData.results[0].overview}</div>`
-    target.innerHTML += `<li class="movie-item"> <img class = "movie-image" src="${httpPrefix}${moviesData.results[0].poster_path}"></li>`;
+//     target.innerHTML += `<div class="text">${moviesData.results[index].original_title}</div>`
+//     target.innerHTML += `<div class="text">${moviesData.results[index].overview}</div>`
+//     target.innerHTML += `<li class="movie-item"> <img class = "movie-image" src="${httpPrefix}${moviesData.results[index].poster_path}"></li>`;
    
-  }
+//   }
 
-  function showLeastPopularDeteils () {
 
-    target1.innerHTML += `<div class="text">${moviesData.results[2].original_title}</div>`
-    target1.innerHTML += `<div class="text">${moviesData.results[2].overview}</div>`
-    target1.innerHTML += `<li class="movie-item"> <img class = "movie-image" src="${httpPrefix}${moviesData.results[2].poster_path}"></li>`;
 
-  }
+
+
+
+
+
+
+// function showLeastPopularDeteils () {
+
+//     target1.innerHTML += `<div class="text">${moviesData.results[2].original_title}</div>`
+//     target1.innerHTML += `<div class="text">${moviesData.results[2].overview}</div>`
+//     target1.innerHTML += `<li class="movie-item"> <img class = "movie-image" src="${httpPrefix}${moviesData.results[2].poster_path}"></li>`;
+
+//   }
     
     

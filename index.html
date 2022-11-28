@@ -6,32 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<link rel="stylesheet" href="src/movies.css">
 <body>
         <button onclick="show(0)"> Show all movies</button>
-        <button onclick="show(1)"> Show most popular movie</button>
-        <button onclick="show(2)"> Show least popular movie</button>
+        <button onclick="show(1),showPopularDetails()"> Show most popular movie</button>
+        <button onclick="show(2),showLeastPopularDeteils()"> Show least popular movie</button>
 
-    <section id="movies-list" class = "movies-list" hidden >
+    <section id="movie-list" class = "movies-list" hidden >
         <label>first section</label>
 
-       
+        <li id="ID0" class="movie-item"></li>
 
     </section>
 
-    <section id="movies-list" class = "movies-list"  hidden>
 
-        <label>second section</label>
 
-        
-
+    <section id="ID9" class = "movies-list" hidden>
+    
         </section>
+
         
-        <section id="movies-list" class = "movies-list" hidden >
+    <section section id="ID8" class = "movies-list" hidden >
 
-            <label>third section</label>
 
-           
-            
             </section>
 
     <script src="src/movies.js"></script>

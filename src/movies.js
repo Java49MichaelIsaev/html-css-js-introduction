@@ -5,6 +5,9 @@ const moviesData = JSON.parse(jsonData);
 const ulElement = document.querySelector(".movies-list")
 const liElement = document.querySelectorAll("movie-item")
 
+var target = document.getElementById("ID9");
+var target1 = document.getElementById("ID8");
+
 const sectionElements = document.querySelectorAll("section") 
 ulElement.innerHTML = getPosterImages();
 
@@ -16,14 +19,23 @@ function getPosterImages(){
 function show(index){
     sectionElements.forEach(section => section.hidden = true);
     sectionElements[index].hidden = false;
-    ulElement.innerHTML 
-    getMovieInfo(index)
     
     } 
 
-    // function getMovieInfo(index) {
+  function showPopularDetails () {
 
-    //     const MoDetails = ulElement[index](movie =>`<li class="movie-item"> <img class = "movie-image" src="${httpPrefix}${movie.poster_path}"></li>`);
-    //     return MoDetails.join('');
+    target.innerHTML += `<div class="text">${moviesData.results[0].original_title}</div>`
+    target.innerHTML += `<div class="text">${moviesData.results[0].overview}</div>`
+    target.innerHTML += `<li class="movie-item"> <img class = "movie-image" src="${httpPrefix}${moviesData.results[0].poster_path}"></li>`;
+   
+  }
 
-    // }
+  function showLeastPopularDeteils () {
+
+    target1.innerHTML += `<div class="text">${moviesData.results[2].original_title}</div>`
+    target1.innerHTML += `<div class="text">${moviesData.results[2].overview}</div>`
+    target1.innerHTML += `<li class="movie-item"> <img class = "movie-image" src="${httpPrefix}${moviesData.results[2].poster_path}"></li>`;
+
+  }
+    
+    

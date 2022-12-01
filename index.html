@@ -1,38 +1,50 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Form</title>
+    <link rel="stylesheet" href="styles/form.css">
 </head>
-<link rel="stylesheet" href="src/movies.css">
+
 <body>
-        <button onclick="show(0)"> Show all movies</button>
-        <button onclick="show(1),showPopularDetails()"> Show most popular movie</button>
-        <button onclick="show(2),showLeastPopularDeteils()"> Show least popular movie</button>
+    <form id="employee-form" onsubmit="onSubmit(event)" class="form-class">
+        <div class="two-inputs">
+            <input type="text" name="employee_name" required placeholder="Enter employee name">
+            <input type="email" name="email" placeholder="Enter email" required>
+        </div>
+        <div class="date-label">
+            <label>Enter birthdate</label>
+            <input type="date" name="birthDate" required placeholder="birthdate">
+        </div>
+
+        <div class="two-inputs">
+            <select name="department" required>
+
+                <option value hidden selected disabled>
+                    --Select Department--
+                </option>
+                <option value="QA">QA</option>
+                <option value="Development">Development</option>
+                <option value="Management">Management</option>
+                <option value="Audit">Audit</option>
+            </select>
+
+            <input type="number" id="salaryBox" name="salary" placeholder="Enter salary"
+             onchange="onChange(event)" required >
+        </div>
+        <div class="buttons">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </div>
 
 
-    <section id="movie-list" class = "movies-list" hidden >
 
-        <label>first section</label>
-
-        
-
-    </section>
-
-
-
-    <section id="ID9" class = "movies-list" hidden>
-    
-        </section>
-
-        
-    <section id="ID8" class = "movies-list" hidden >
-
-
-            </section>
-
-    <script src="src/movies.js"></script>
+    </form>
+    <script src="src/form.js"></script>
 </body>
-</html> 
+
+</html>

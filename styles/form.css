@@ -1,34 +1,40 @@
-.main {
+body {
     display: flex;
-    color: #000;
+    flex-direction: row;
+    align-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
 }
 
 .form-class {
     display: flex;
     flex-direction: column;
 }
+
 .two-inputs {
     display: flex;
     justify-content: space-around;
     width: 40vw;
     margin-top: 5vh;
 }
+
 .date-label {
     margin-top: 5vh;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     height: 10vh;
     justify-content: space-around;
 }
+
 .buttons {
     display: flex;
     justify-content: space-around;
     margin-top: 10vh;
 }
 
-
 .salary {
-    
+
     box-sizing: border-box;
     border: 3px solid rgb(255, 0, 0);
 
@@ -37,18 +43,4 @@
 .birthdate {
     box-sizing: border-box;
     border: 3px solid rgb(255, 0, 0);
-}
-
-.error {
-  
-    width: 500px;
-    height: 100px;
-    position: absolute;
-    top:0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    text-align: center;
-    font-size: xx-large;
 }

@@ -2,7 +2,6 @@ const inputElements = document.querySelectorAll(".form-class [name]");
 const salaryBox = document.getElementById("salaryBox");
 const errorBox = document.getElementById("error")
 
-
 function onSubmit(event) {
     
     event.preventDefault();
@@ -23,7 +22,6 @@ function onChange(event) {
             errorBox.innerHTML = "Sorry, salary must be between 1000 and 40000";
             setTimeout(showAlert, 5000)
             event.target.value = ''
-
         }
     }
 

@@ -4,8 +4,7 @@ const errorBox = document.getElementById("error")
 
 
 function onSubmit(event) {
-    console.log("WOW")
-
+    
     event.preventDefault();
     console.log("submitted");
     const employee = Array.from(inputElements).reduce(

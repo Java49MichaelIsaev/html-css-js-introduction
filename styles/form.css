@@ -1,4 +1,7 @@
-
+.main {
+    display: flex;
+    color: #000;
+}
 
 .form-class {
     display: flex;
@@ -47,5 +50,5 @@
     right: 0;
     margin: auto;
     text-align: center;
-    font-size: larger;
+    font-size: xx-large;
 }

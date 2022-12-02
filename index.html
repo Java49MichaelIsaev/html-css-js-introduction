@@ -11,6 +11,16 @@
 </head>
 
 <body>
+
+    <div id="error-birth" class="error"> 
+
+        </div>
+
+        <div id="error-salary" class="error"> 
+
+        </div>    
+
+<main id="main">
     <form id="employee-form" onsubmit="onSubmit(event)" class="form-class">
         <div class="two-inputs">
             <input type="text" name="employee_name" required placeholder="Enter employee name">
@@ -18,7 +28,8 @@
         </div>
         <div class="date-label">
             <label>Enter birthdate</label>
-            <input type="date" name="birthDate" required placeholder="birthdate">
+            <input type="date" id="birthDate" name="birthDate" required placeholder="birthdate" onchange="onChange(event)" required >
+            
         </div>
 
         <div class="two-inputs">
@@ -44,6 +55,7 @@
 
 
     </form>
+    </main>
     <script src="src/form.js"></script>
 </body>
 

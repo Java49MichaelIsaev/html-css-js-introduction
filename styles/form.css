@@ -1,3 +1,5 @@
+
+
 .form-class {
     display: flex;
     flex-direction: column;
@@ -21,21 +23,29 @@
     margin-top: 10vh;
 }
 
-.salary {
-    
-    box-sizing: border-box;
-    border: 3px solid rgb(255, 0, 0);
-    
-    
-    
-}
 
 .salary {
     
     box-sizing: border-box;
     border: 3px solid rgb(255, 0, 0);
-    
-    
-    
+
 }
 
+.birthdate {
+    box-sizing: border-box;
+    border: 3px solid rgb(255, 0, 0);
+}
+
+.error {
+  
+    width: 500px;
+    height: 100px;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    font-size: larger;
+}

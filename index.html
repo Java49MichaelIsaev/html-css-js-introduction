@@ -5,30 +5,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form</title>
-    <link rel="stylesheet" href="styles/form.css">
+    <title>Library</title>
+    <link rel="stylesheet" href="styles/library.css">
 </head>
 
 <body>
     <div class="buttons-menu">
         <button onclick="showSection(0)" class="btn-menu">Add Book</button>
-        <button onclick="showSection(1)" class="btn-menu">Show all books</button>
+        <button onclick="showSection(1)" class="btn-menu">Show All Books</button>
         <button onclick="showSection(2)" class="btn-menu">Show Books by Number of Pages</button>
         <button onclick="showSection(3)" class="btn-menu">Show Books by Author</button>
     </div>
-    
     <section id="add-book" hidden>
         <header class="form-title">
             Book Form
         </header>
-        <form id="book_form" onsubmit="onSubmitBookForm(event)" class="book-form-class">
+        <form id="book_form" class="book-form-class">
             <div class="two-inputs">
-                <input type="text" name="book_title"  placeholder="Enter book title" required>
+                <input type="text" name="book_title" required placeholder="Enter book title">
                 <input type="text" name="author" placeholder="Enter author name" required>
             </div>
             <div class="date-label">
                 <label>Enter publishing date</label>
-                <input type="date" name="publishingDate" required onchange="onChangeBookForm(event)">
+                <input type="date" name="publishingDate" required id="date_input">
 
             </div>
             <p id="date_error" class="error"></p>
@@ -42,7 +41,8 @@
                     <option value="Story">Story</option>
                     <option value="Play">Play</option>
                 </select>
-                <input type="number" name="pages" placeholder="Enter number of pages" required onchange="onChangeBookForm(event)" >
+                <input type="number" name="pages" placeholder="Enter number of pages"
+                                    id="pages_input" required>
 
             </div>
             <p id="pages_error" class="error"></p>
@@ -50,25 +50,21 @@
                 <button type="submit">Submit</button>
                 <button type="reset">Reset</button>
             </div>
-
         </form>
     </section>
 
     <section id="show-all-books" hidden>
         <header class="form-title">
             The Full List of Books
-            </header>
-
+        </header>
         <ul class="books-list" id="books-all">
 
         </ul>
-
     </section>
     <section id="show-books-pages" hidden>
         <header class="form-title">
             Pages Form
-            </header>
-
+        </header>
         <form id="pages-form" class="form-class" onsubmit="onSubmitPages(event)">
             <div class="two-inputs">
                 <input type="number" name="pagesFrom" placeholder="Enter pages 'From'" onchange="onChangePagesFrom(event)" required>
@@ -81,31 +77,27 @@
         </form>
         <p id="pages_form_error" class="error center"></p>
         <ul class="books-list" id="books-pages">
-            
+
         </ul>
-
     </section>
-
     <section id="show-books-author" hidden>
         <header class="form-title">
             Author Form
-            </header>
-            <form id="author-form" class="author-form-class" onsubmit="onSubmitAuthor(event)" required>
+        </header>
+        <form id="author-form" class="author-form-class" onsubmit="onSubmitAuthor(event)">
             <div class="one-input">
                 <label>Author</label>
-                <input type="text" name="author-name" placeholder="Enter author name">
+                <input type="text" name="author-name" placeholder="Enter author name" required>
             </div>
-            <div class="buttons">   
+            <div class="buttons">
                 <button type="submit">Search</button>
                 <button type="reset">Reset</button>
             </div>
-            </form>
-            <ul class="books-list" id="books-author">
-                
-            </ul>
+        </form>
+        <ul class="books-list" id="books-author">
 
+        </ul>
     </section>
-    
     <script src="src/main.js" type="module"></script>
 </body>
 

@@ -38,7 +38,7 @@ onChangePagesFrom() {
         this.#errorMessageElement);
     } else {
         this.#pagesFrom = value;
-    }
+    } 
 })
 }
 

@@ -12,7 +12,10 @@ export class AuthorForm {
     addSubmitHandler(processPagesFun) {
         this.#formElement.addEventListener("submit", (event) => {
             event.preventDefault();
-            const authorObj = { idAuthorInput: this.#author }
+
+            const authorSearch = this.#authorInputElement.value;
+            const authorObj = { idAuthorInput: authorSearch }
+
             console.log(authorObj)
             processPagesFun(authorObj)
         })

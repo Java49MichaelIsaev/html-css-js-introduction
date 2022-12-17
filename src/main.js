@@ -52,7 +52,7 @@ function showSection(index) {
     if (index == 1) {
         const books = library.getAllBooks();
         listAllBooks.showBooks(books);
-    }
+    }2
 }
 
 window.showSection = showSection;
